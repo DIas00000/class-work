@@ -1,15 +1,14 @@
 import asyncio
 import logging
 import requests
-from datetime import datetime
-
+from datetime import datetime, timezone
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import Command
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 API_TOKEN = "8492691594:AAFSmXXPnv3lL_SEwyJJs9rumwQtisM7r_U"
 
-# Настраиваем логирование ошибок
+# Логирование ошибок
 logging.basicConfig(
     filename="errors.log",
     level=logging.ERROR,
@@ -34,7 +33,7 @@ def get_weather(city: str):
 
         temp = data["current_condition"][0]["temp_C"]
         desc = data["current_condition"][0]["weatherDesc"][0]["value"]
-        local_time = datetime.utcnow().strftime("%H:%M:%S UTC")
+        local_time = datetime.now(timezone.utc).strftime("%H:%M:%S UTC")
 
         text = (
             f"🌆 Город: <b>{city}</b>\n"
@@ -43,11 +42,31 @@ def get_weather(city: str):
             f"🕒 Обновлено: {local_time}"
         )
         return text
+
+    except requests.exceptions.Timeout:
+        logging.error(f"⏱ Timeout при запросе к {city}")
+        # Повторяем запрос один раз автоматически
+        try:
+            response = requests.get(f"https://wttr.in/{city}?format=j1", timeout=5)
+            response.raise_for_status()
+            data = response.json()
+            temp = data["current_condition"][0]["temp_C"]
+            desc = data["current_condition"][0]["weatherDesc"][0]["value"]
+            local_time = datetime.now(timezone.utc).strftime("%H:%M:%S UTC")
+            return (
+                f"🌆 Город: <b>{city}</b>\n"
+                f"🌡 Температура: <b>{temp}°C</b>\n"
+                f"☁️ Состояние: {desc}\n"
+                f"🕒 Обновлено (повтор): {local_time}"
+            )
+        except Exception as e:
+            logging.error(f"Ошибка после повторного запроса: {e}")
+            return None
     except requests.exceptions.RequestException as e:
         logging.error(f"Ошибка API для {city}: {e}")
         return None
 
-# --- Генерация клавиатуры ---
+# --- Клавиатура основная ---
 def get_keyboard(city: str, is_auto: bool):
     buttons = [
         [
@@ -63,6 +82,7 @@ def get_keyboard(city: str, is_auto: bool):
     ]
     return InlineKeyboardMarkup(inline_keyboard=buttons)
 
+# --- Клавиатура выбора города ---
 def get_city_keyboard(current_city: str):
     buttons = []
     for c in CITIES:
@@ -143,6 +163,7 @@ async def toggle_auto(callback: types.CallbackQuery):
     weather = get_weather(city)
     await callback.message.edit_text(weather, reply_markup=keyboard, parse_mode="HTML")
 
+# --- Фоновое автообновление ---
 async def auto_refresh(message: types.Message, user_id: int):
     while auto_update.get(user_id, False):
         await asyncio.sleep(30)
