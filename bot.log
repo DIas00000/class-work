@@ -1,0 +1,70 @@
+2025-10-25 22:32:48,316 [INFO] Бот запущен \U0001f680
+2025-10-25 22:32:53,717 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getMe "HTTP/1.1 200 OK"
+2025-10-25 22:32:53,800 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/deleteWebhook "HTTP/1.1 200 OK"
+2025-10-25 22:32:53,801 [INFO] Application started
+2025-10-25 22:32:54,029 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getUpdates "HTTP/1.1 200 OK"
+2025-10-25 22:32:54,031 [INFO] Пользователь вошёл: ID=945988667, Имя=young kid, Время=2025-10-25 22:32:54.031206
+2025-10-25 22:32:54,332 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/sendMessage "HTTP/1.1 200 OK"
+2025-10-25 22:32:54,333 [INFO] Пользователь вошёл: ID=945988667, Имя=young kid, Время=2025-10-25 22:32:54.333783
+2025-10-25 22:32:54,464 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/sendMessage "HTTP/1.1 200 OK"
+2025-10-25 22:33:04,106 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getUpdates "HTTP/1.1 200 OK"
+2025-10-25 22:33:11,732 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getUpdates "HTTP/1.1 200 OK"
+2025-10-25 22:33:11,734 [INFO] Пользователь 945988667 выбрал сценарий: Цитата
+2025-10-25 22:33:12,138 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/sendMessage "HTTP/1.1 200 OK"
+2025-10-25 22:33:12,139 [ERROR] Ошибка API при запросе https://api.quotable.io/random: HTTPSConnectionPool(host='api.quotable.io', port=443): Max retries exceeded with url: /random (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000026E40C14C20>: Failed to resolve 'api.quotable.io' ([Errno 11002] getaddrinfo failed)"))
+2025-10-25 22:33:17,198 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getUpdates "HTTP/1.1 200 OK"
+2025-10-25 22:33:17,199 [INFO] Пользователь вошёл: ID=945988667, Имя=young kid, Время=2025-10-25 22:33:17.199926
+2025-10-25 22:33:17,493 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/sendMessage "HTTP/1.1 200 OK"
+2025-10-25 22:33:26,000 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getUpdates "HTTP/1.1 200 OK"
+2025-10-25 22:33:26,002 [INFO] Пользователь 945988667 выбрал сценарий: Погода
+2025-10-25 22:33:27,087 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/sendMessage "HTTP/1.1 200 OK"
+2025-10-25 22:33:27,088 [WARNING] Долгий ответ API: https://api.open-meteo.com/v1/forecast?latitude=51.17&longitude=71.45&current_weather=true (1.09 сек)
+2025-10-25 22:33:27,088 [INFO] Успешный запрос: https://api.open-meteo.com/v1/forecast?latitude=51.17&longitude=71.45&current_weather=true (1.09 сек)
+2025-10-25 22:33:29,155 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getUpdates "HTTP/1.1 200 OK"
+2025-10-25 22:33:29,157 [INFO] Пользователь 945988667 выбрал сценарий: Цитата
+2025-10-25 22:33:30,133 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/sendMessage "HTTP/1.1 200 OK"
+2025-10-25 22:33:30,134 [ERROR] Ошибка API при запросе https://api.quotable.io/random: HTTPSConnectionPool(host='api.quotable.io', port=443): Max retries exceeded with url: /random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1028)')))
+2025-10-25 22:33:40,101 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getUpdates "HTTP/1.1 200 OK"
+2025-10-25 22:33:50,177 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getUpdates "HTTP/1.1 200 OK"
+2025-10-25 22:34:00,253 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getUpdates "HTTP/1.1 200 OK"
+2025-10-25 22:34:10,329 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getUpdates "HTTP/1.1 200 OK"
+2025-10-25 22:34:20,405 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getUpdates "HTTP/1.1 200 OK"
+2025-10-25 22:34:30,445 [INFO] Application is stopping. This might take a moment.
+2025-10-25 22:34:30,445 [INFO] Application.stop() complete
+2025-10-25 22:34:30,446 [INFO] Бот остановлен \U0001f6d1
+2025-10-25 22:34:31,451 [INFO] Бот запущен \U0001f680
+2025-10-25 22:34:32,562 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getMe "HTTP/1.1 200 OK"
+2025-10-25 22:34:32,641 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/deleteWebhook "HTTP/1.1 200 OK"
+2025-10-25 22:34:32,641 [INFO] Application started
+2025-10-25 22:34:34,859 [INFO] Application is stopping. This might take a moment.
+2025-10-25 22:34:34,860 [INFO] Application.stop() complete
+2025-10-25 22:34:34,861 [INFO] Бот остановлен \U0001f6d1
+2025-10-25 22:34:35,934 [INFO] Бот запущен \U0001f680
+2025-10-25 22:34:37,107 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getMe "HTTP/1.1 200 OK"
+2025-10-25 22:34:37,200 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/deleteWebhook "HTTP/1.1 200 OK"
+2025-10-25 22:34:37,201 [INFO] Application started
+2025-10-25 22:34:38,357 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getUpdates "HTTP/1.1 200 OK"
+2025-10-25 22:34:38,359 [INFO] Пользователь 945988667 выбрал сценарий: Цитата
+2025-10-25 22:34:38,591 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/sendMessage "HTTP/1.1 200 OK"
+2025-10-25 22:34:38,592 [ERROR] Ошибка API при запросе https://api.quotable.io/random: HTTPSConnectionPool(host='api.quotable.io', port=443): Max retries exceeded with url: /random (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002B4D2284C20>: Failed to resolve 'api.quotable.io' ([Errno 11002] getaddrinfo failed)"))
+2025-10-25 22:34:45,596 [INFO] Application is stopping. This might take a moment.
+2025-10-25 22:34:45,597 [INFO] Application.stop() complete
+2025-10-25 22:34:45,598 [INFO] Бот остановлен \U0001f6d1
+2025-10-25 22:34:46,595 [INFO] Бот запущен \U0001f680
+2025-10-25 22:34:47,694 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getMe "HTTP/1.1 200 OK"
+2025-10-25 22:34:47,777 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/deleteWebhook "HTTP/1.1 200 OK"
+2025-10-25 22:34:47,779 [INFO] Application started
+2025-10-25 22:34:48,016 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getUpdates "HTTP/1.1 200 OK"
+2025-10-25 22:34:48,018 [INFO] Пользователь 945988667 выбрал сценарий: Цитата
+2025-10-25 22:34:48,136 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/sendMessage "HTTP/1.1 200 OK"
+2025-10-25 22:34:48,137 [ERROR] Ошибка API при запросе htps://api.quotable.io/random: No connection adapters were found for 'htps://api.quotable.io/random'
+2025-10-25 22:34:58,098 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getUpdates "HTTP/1.1 200 OK"
+2025-10-25 22:35:08,182 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getUpdates "HTTP/1.1 200 OK"
+2025-10-25 22:35:18,263 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getUpdates "HTTP/1.1 200 OK"
+2025-10-25 22:35:28,343 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getUpdates "HTTP/1.1 200 OK"
+2025-10-25 22:35:38,423 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getUpdates "HTTP/1.1 200 OK"
+2025-10-25 22:35:48,504 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getUpdates "HTTP/1.1 200 OK"
+2025-10-25 22:35:58,585 [INFO] HTTP Request: POST https://api.telegram.org/bot8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0/getUpdates "HTTP/1.1 200 OK"
+2025-10-25 22:36:06,292 [INFO] Application is stopping. This might take a moment.
+2025-10-25 22:36:06,292 [INFO] Application.stop() complete
+2025-10-25 22:36:06,293 [INFO] Бот остановлен \U0001f6d1
