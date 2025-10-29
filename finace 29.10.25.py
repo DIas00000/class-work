@@ -132,7 +132,7 @@ async def back_to_menu(message: types.Message):
 @dp.message(lambda message: message.text == "📞 Контакты / Обратная связь")
 async def contacts_info(message: types.Message):
     text = (
-        "📞 Если у вас есть вопросы или предложения, пишите на почту: support@example.com\n"
+        "📞 Если у вас есть вопросы или предложения, пишите в тг: @quinxray\n"
         "💬 Также можете связаться через Telegram: @dias_helper_support"
     )
     await send_safe_message(message, text)
