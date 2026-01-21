@@ -5,7 +5,7 @@ import asyncio
 import re
 
 # 🔹 Токен
-TOKEN = "8492691594:AAHGomYK8lOc-AUGzJ-PtHGopAixKsPOlI0"
+TOKEN = "8492691594:AAGx96Aqi9jdNW0SLhe6Hg9X_iikLLCK91s"
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
@@ -219,4 +219,3 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-
